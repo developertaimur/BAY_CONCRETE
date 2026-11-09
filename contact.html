@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book an Appointment | Bay Concrete</title>
+    <meta
+      name="description"
+      content="Book a free on-site estimate with Bay Concrete. Choose your service, pick a preferred time, and tell us about fault-line, settling, or drainage concerns."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Book an Appointment | Bay Concrete" />
+    <meta
+      property="og:description"
+      content="Schedule a free estimate for driveways, stamped patios, foundations, and commercial flatwork across the Bay Area."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Open+Sans:wght@400;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=4" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span>Serving the Bay Area · Licensed &amp; Insured</span>
+        <span class="highlight">Free Estimates · Mon–Sat 7am–6pm</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" aria-label="Bay Concrete home">
+          <img class="logo" src="assets/bay-concrete-logo.png" alt="Bay Concrete" />
+        </a>
+
+        <input class="nav-checkbox" type="checkbox" id="nav-checkbox" />
+
+        <nav class="nav" id="main-nav" aria-label="Main">
+          <a href="index.html#home">Home</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#projects">Projects</a>
+          <a href="index.html#process">Process</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#reviews">Reviews</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-cta" href="#booking">Book Appointment</a>
+          <label class="nav-toggle" for="nav-checkbox" id="nav-toggle" aria-controls="main-nav">
+            <span class="visually-hidden">Menu</span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <div class="container contact-hero-inner">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Contact &amp; Booking</p>
+          <h1 class="section-title">Book your free <span class="hl">appointment</span></h1>
+          <p class="contact-hero-lead">
+            Living on a fault line means shifting soil, settling slabs, and drainage that can undermine
+            concrete. Tell us what you’re facing — we’ll schedule an on-site visit and map the right fix.
+          </p>
+          <div class="contact-hero-actions">
+            <a class="btn btn-primary" href="tel:+10000000000">(000) 000-0000</a>
+            <a class="btn btn-outline-dark" href="#booking">Book online</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container contact-page" id="booking">
+        <div class="contact-page-inner">
+          <aside class="contact-aside">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Reach us directly</p>
+            <h2 class="contact-aside-title">Prefer to talk first?</h2>
+            <p class="contact-aside-text">
+              Call for a quick consult, or book below so we already have your service, site concerns, and
+              preferred time.
+            </p>
+
+            <div class="contact-meta contact-meta-light">
+              <div>
+                <span class="eyebrow label">Phone</span>
+                <a class="value contact-link" href="tel:+10000000000">(000) 000-0000</a>
+              </div>
+              <div>
+                <span class="eyebrow label">Email</span>
+                <a class="value contact-link" href="mailto:info@bayconcrete.com">info@bayconcrete.com</a>
+              </div>
+              <div>
+                <span class="eyebrow label">Service Area</span>
+                <span class="value">San Francisco Bay Area</span>
+              </div>
+              <div>
+                <span class="eyebrow label">Hours</span>
+                <span class="value">Mon–Sat · 7am–6pm</span>
+              </div>
+            </div>
+
+            <div class="local-issues">
+              <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Bay Area challenges we solve</p>
+              <ul>
+                <li><span class="check check-dark" aria-hidden="true">✓</span>Fault-line movement &amp; cracking</li>
+                <li><span class="check check-dark" aria-hidden="true">✓</span>Settling / sinking slabs</li>
+                <li><span class="check check-dark" aria-hidden="true">✓</span>Poor drainage under concrete</li>
+                <li><span class="check check-dark" aria-hidden="true">✓</span>Soft or shifting soils</li>
+              </ul>
+            </div>
+          </aside>
+
+          <div class="contact-panel">
+            <form class="contact-form booking-form" id="contact-form" novalidate>
+              <p class="form-heading">Appointment request</p>
+              <p class="form-sub">Choose a service and preferred time. We’ll confirm within one business day.</p>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input id="name" type="text" name="name" required placeholder="Your name" autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    required
+                    placeholder="(555) 555-5555"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="you@email.com"
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service" required aria-label="Service">
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Driveways">Driveways</option>
+                  <option value="Stamped &amp; Decorative">Stamped &amp; Decorative</option>
+                  <option value="Commercial Flatwork">Commercial Flatwork</option>
+                  <option value="Patios &amp; Pool Decks">Patios &amp; Pool Decks</option>
+                  <option value="Foundations &amp; Slabs">Foundations &amp; Slabs</option>
+                  <option value="Repair &amp; Resurfacing">Repair &amp; Resurfacing</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="date">Preferred date</label>
+                  <input id="date" type="date" name="date" required />
+                </div>
+                <div class="field">
+                  <label for="time">Preferred time</label>
+                  <select id="time" name="time" required>
+                    <option value="" disabled selected>Select a time</option>
+                    <option value="Morning (7am–11am)">Morning (7am–11am)</option>
+                    <option value="Midday (11am–2pm)">Midday (11am–2pm)</option>
+                    <option value="Afternoon (2pm–6pm)">Afternoon (2pm–6pm)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="address">Job site city / address</label>
+                <input
+                  id="address"
+                  type="text"
+                  name="address"
+                  placeholder="City or street address"
+                  autocomplete="street-address"
+                />
+              </div>
+
+              <div class="field">
+                <label for="issue">Site concern</label>
+                <select id="issue" name="issue">
+                  <option value="">Select if it applies</option>
+                  <option value="Fault-line / shifting ground">Fault-line / shifting ground</option>
+                  <option value="Sinking or settling concrete">Sinking or settling concrete</option>
+                  <option value="Water drainage / moisture">Water drainage / moisture</option>
+                  <option value="Cracks or heaving">Cracks or heaving</option>
+                  <option value="New install — no issue yet">New install — no issue yet</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Project details</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Size of area, finish you want, timeline, or anything else we should know"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Book appointment</button>
+              <p class="form-note">Free estimate · No obligation · We reply within one business day</p>
+            </form>
+
+            <div class="contact-success" id="contact-success" role="status" aria-live="polite">
+              <p>Appointment requested</p>
+              <p class="success-detail">
+                Thanks — we have your details and will confirm your visit soon. Need us sooner?
+                <a href="tel:+10000000000">Call (000) 000-0000</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="brand">
+          <img class="footer-logo" src="assets/bay-concrete-logo-white.png" alt="Bay Concrete" />
+          <p>Quality concrete for homes and businesses across the Bay Area.</p>
+        </div>
+        <div>
+          <p class="eyebrow">Services</p>
+          <ul>
+            <li><a href="index.html#services">Driveways</a></li>
+            <li><a href="index.html#services">Stamped &amp; Decorative</a></li>
+            <li><a href="index.html#services">Commercial Flatwork</a></li>
+            <li><a href="index.html#services">Patios &amp; Pool Decks</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow">Company</p>
+          <ul>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#process">Process</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#reviews">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="container copyright">© <span id="year"></span> Bay Concrete. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js?v=4"></script>
+  </body>
+</html>

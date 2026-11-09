@@ -1,0 +1,9 @@
+# Local agent / laptop handoff — keep offline, do not publish
+HANDOFF.md
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
