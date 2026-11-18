@@ -10,8 +10,8 @@ Bay Concrete provides residential and commercial concrete work:
 
 - Driveways  
 - Stamped & decorative concrete  
-- Commercial flatwork  
-- Patios & pool decks  
+- Place and finish  
+- Patios & pool demolition 
 - Foundations & slabs  
 - Repair & resurfacing  
 
