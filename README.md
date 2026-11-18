@@ -11,11 +11,10 @@ Bay Concrete provides residential and commercial concrete work:
 - Driveways  
 - Stamped & decorative concrete  
 - Place and finish  
-- Patios & pool demolition 
+- Patios & pool demolition (partial and complete, starting at $7,000)  
 - Foundations & slabs  
-- Repair & resurfacing  
 
-The site highlights local Bay Area ground challenges (fault-line movement, settling slabs, soft soils, and drainage) and includes a dedicated appointment booking page so visitors can request a free estimate by service.
+The site highlights local Bay Area ground challenges (fault-line movement, settling slabs, and drainage) and includes a dedicated appointment booking page so visitors can request a free estimate by service.
 
 ## Pages
 
@@ -76,16 +75,12 @@ You can also open `index.html` directly in a browser, but a local static server 
 1. Upload the site files to the hosting `public_html` (or target) directory.  
 2. Keep `.htaccess` in place for caching, compression, and the custom 404.  
 3. After SSL is active, uncomment the HTTPS redirect rules in `.htaccess` if desired.  
-4. Replace placeholder phone/email with live business contact details before go-live.  
+## Contact
 
-## Contact placeholders
+- Phone: `(510) 415-9724`  
+- Email: `baycon2027@gmail.com`  
 
-Until the client provides final details, the site uses placeholders:
-
-- Phone: `(000) 000-0000`  
-- Email: `info@bayconcrete.com`  
-
-The booking form currently validates and shows a success message in the browser. Connect it to an email/form backend (e.g. Formspree, Web3Forms, or Hostinger mail) before production so leads are delivered.
+The booking form submits appointment requests to `baycon2027@gmail.com` via [FormSubmit](https://formsubmit.co) AJAX. Open `baycon2027@gmail.com`, find the FormSubmit **Activate Form** email, and click the link once. After activation, new booking requests arrive in that inbox.
 
 ## License
 

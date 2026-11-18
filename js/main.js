@@ -173,14 +173,98 @@
   }
 
   if (form && success) {
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var formError = document.getElementById("form-error");
+    var defaultBtnText = submitBtn ? submitBtn.textContent : "";
+    var defaultErrorHtml = formError ? formError.innerHTML : "";
+
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
-      form.classList.add("is-hidden");
-      success.classList.add("is-visible");
+
+      if (formError) {
+        formError.hidden = true;
+        formError.innerHTML = defaultErrorHtml;
+      }
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending…";
+      }
+
+      var endpoint = (form.getAttribute("action") || "").replace(
+        "https://formsubmit.co/",
+        "https://formsubmit.co/ajax/"
+      );
+      var payload = new FormData(form);
+      var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+      var timeoutId = setTimeout(function () {
+        if (controller) controller.abort();
+      }, 25000);
+
+      var fetchOptions = {
+        method: "POST",
+        body: payload,
+        headers: { Accept: "application/json" },
+      };
+      if (controller) fetchOptions.signal = controller.signal;
+
+      fetch(endpoint, fetchOptions)
+        .then(function (response) {
+          return response.json().catch(function () {
+            return {};
+          }).then(function (data) {
+            return { ok: response.ok, data: data || {} };
+          });
+        })
+        .then(function (result) {
+          var data = result.data;
+          var successFlag = data.success;
+          var isSuccess = successFlag === true || successFlag === "true";
+          var message = data.message ? String(data.message) : "";
+
+          if (isSuccess) {
+            form.reset();
+            form.classList.add("is-hidden");
+            success.classList.add("is-visible");
+            return;
+          }
+
+          if (/activation/i.test(message)) {
+            throw new Error(
+              "Check baycon2027@gmail.com for a FormSubmit email and click Activate Form. After that, appointments will arrive in the inbox."
+            );
+          }
+
+          if (!result.ok || successFlag === false || successFlag === "false") {
+            throw new Error(message || "Request failed");
+          }
+
+          form.reset();
+          form.classList.add("is-hidden");
+          success.classList.add("is-visible");
+        })
+        .catch(function (err) {
+          if (formError) {
+            var detail =
+              err && err.name === "AbortError"
+                ? "The request timed out. Please try again or call <a href=\"tel:+15104159724\">(510) 415-9724</a>."
+                : err && err.message
+                  ? err.message
+                  : defaultErrorHtml;
+            formError.innerHTML = detail;
+            formError.hidden = false;
+          }
+        })
+        .finally(function () {
+          clearTimeout(timeoutId);
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = defaultBtnText;
+          }
+        });
     });
   }
 })();

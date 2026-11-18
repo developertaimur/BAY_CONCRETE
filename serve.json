@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/404", "destination": "/404.html" }
+  ],
+  "redirects": [
+    { "source": "/contact.html", "destination": "/contact", "type": 301 },
+    { "source": "/index.html", "destination": "/", "type": 301 }
+  ]
+}
