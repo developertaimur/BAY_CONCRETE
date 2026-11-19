@@ -11,7 +11,7 @@ Bay Concrete provides residential and commercial concrete work:
 - Driveways  
 - Stamped & decorative concrete  
 - Place and finish  
-- Patios & pool demolition (partial and complete, starting at $7,000)  
+- Patios & pool demolition (partial from $10,000; complete from $16,000)  
 - Foundations & slabs  
 
 The site highlights local Bay Area ground challenges (fault-line movement, settling slabs, and drainage) and includes a dedicated appointment booking page so visitors can request a free estimate by service.
